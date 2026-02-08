@@ -13,7 +13,7 @@ namespace Kontacta.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-CEP1GCL\SQLSERVEREXPRESS;Database=KontactaDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-CEP1GCL\SQLSERVEREXPRESS;Database=KontactaDB;Trusted_Connection=True; TrustServerCertificate=True;");
         }
     }
 }
